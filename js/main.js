@@ -13,29 +13,29 @@ $(function () {
     infinite: true,
     slidesToShow: 3,
     draggable: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1100,
-    //     settings: {
-    //       slidesToShow: 3
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 750,
-    //     settings: {
-    //       slidesToShow: 2
-    //     }
-    //   },
-    // ]
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ]
   })
-  // $('.team__slider-prev').on('click', function (e) {
-  //   e.preventDefault()
-  //   $('.team__slider').slick('slickPrev')
-  // })
-  // $('.team__slider-next').on('click', function (e) {
-  //   e.preventDefault()
-  //   $('.team__slider').slick('slickNext')
-  // })
+  $('.popular__prev').on('click', function (e) {
+    e.preventDefault()
+    $('.popular__slider').slick('slickPrev')
+  })
+  $('.popular__next').on('click', function (e) {
+    e.preventDefault()
+    $('.popular__slider').slick('slickNext')
+  })
 
   $('.partners__slider').slick({
     arrows: false,
@@ -53,6 +53,12 @@ $(function () {
         breakpoint: 750,
         settings: {
           slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1
         }
       },
     ]
