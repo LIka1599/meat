@@ -225,7 +225,6 @@ body {
 }
 
 .header__menu-list {
-  overflow-y: scroll;
   position: relative;
 }
 
@@ -1471,6 +1470,9 @@ body {
   }
   .footer__top-phones {
     text-align: center;
+  }
+  .header__menu-list {
+    overflow-y: scroll;
   }
 }
 @media (max-width: 480px) {

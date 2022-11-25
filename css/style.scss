@@ -144,7 +144,6 @@ body {
   opacity: 1;
 }
 .header__menu-list {
-  overflow-y: scroll;
   position: relative;
 }
 .header__menu-item {
@@ -1541,6 +1540,9 @@ body {
   }
   .footer__top-phones {
     text-align: center;
+  }
+  .header__menu-list {
+    overflow-y: scroll;
   }
 }
 
