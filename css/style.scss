@@ -1592,6 +1592,10 @@ body {
     max-width: none;
     width: 100%;
   }
+
+  .close {
+    left: 10px;
+  }
 }
 
 @media (max-width: 445px) {
@@ -1610,7 +1614,5 @@ body {
     max-width: 250px;
   }
 
-  .close {
-    left: 10px;
-  }
+
 }
