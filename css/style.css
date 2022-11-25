@@ -1151,7 +1151,7 @@ body {
     visibility: visible;
   }
   .popular {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 1000px) {
@@ -1549,5 +1549,8 @@ body {
   .order__steps-box {
     min-width: 0;
     max-width: 250px;
+  }
+  .popular__next {
+    transform: translateX(50%);
   }
 }/*# sourceMappingURL=style.css.map */

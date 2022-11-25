@@ -1147,8 +1147,9 @@ body {
   }
 
   .popular {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
+  
 }
 
 
@@ -1640,5 +1641,8 @@ body {
     max-width: 250px;
   }
 
+  .popular__next {
+    transform: translateX(50%);
+  }
 
 }
