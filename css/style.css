@@ -1509,6 +1509,10 @@ body {
   .order__steps-box {
     margin: 0 auto;
   }
+  .header__menu {
+    max-width: none;
+    width: 100%;
+  }
 }
 @media (max-width: 445px) {
   .order__step-item {
