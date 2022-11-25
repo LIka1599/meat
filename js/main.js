@@ -93,11 +93,13 @@ $(function () {
     if ($('.header__menu').hasClass('header__menu--open')) {
       $('.header__menu').removeClass('header__menu--open');
       $('.owerlay').removeClass('owerlay--show');
+      $('body').css({"height": "100%","overflow-y": "auto"})
       //$('.burger-menu').removeClass('burger-menu--open');
     }
     else {
       $('.header__menu').addClass('header__menu--open');
       $('.owerlay').addClass('owerlay--show');
+      $('body').css({"height": "100vh", "overflow-y": "hidden"})
       //$('.burger-menu').addClass('burger-menu--open');
     }
 
