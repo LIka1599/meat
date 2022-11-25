@@ -15,7 +15,7 @@ $(function () {
     draggable: true,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2
         }

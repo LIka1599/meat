@@ -704,7 +704,7 @@ body {
 //popular
 
 .popular {
-  padding: 60px 0;
+  padding: 60px 20px;
   background: #f5f5f5;
 }
 
@@ -1124,6 +1124,13 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 1100px) {
+  .popular__slide-inner {
+    max-width: none;
+  }
+}
+
+
 @media (max-width: 1000px) {
 
   .header {
@@ -1226,6 +1233,8 @@ body {
   .popular__slide-img {
     overflow: hidden;
   }
+
+
 }
 
 @media (max-width: 960px) {
@@ -1534,9 +1543,69 @@ body {
   .order__steps-box {
     padding-left: 0;
     padding-right: 0;
+    min-width: none;
   }
 
   .order__form-button {
     max-width: 165px;
+  }
+
+  .order__steps-box {
+    max-width: 350px;
+  }
+
+  .order__step-item {
+    max-width: 300px;
+    //margin-left: 0;
+  }
+
+  .order__step-text {
+    flex-wrap: wrap;
+    white-space: normal;
+    max-width: 150px;
+  }
+
+  .order__steps {
+    min-width: 0;
+    max-width: 400px;
+    width: auto;
+  }
+
+  .header__menu {
+    width: auto;
+  }
+
+  .our-products__desc {
+    min-width: 0;
+  }
+
+  .burger-menu__icon, .close__icon {
+    width: 45px;
+    height: 45px;
+    min-height: 45px;
+  }
+  .order__steps-box {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 445px) {
+
+  .order__step-item {
+    max-width: 200px;
+  }
+
+  .order__steps {
+    max-width: 300px;
+
+  }
+
+  .order__steps-box {
+    min-width: 0;
+    max-width: 250px;
+  }
+
+  .close {
+    left: 10px;
   }
 }
