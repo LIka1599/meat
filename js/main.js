@@ -105,4 +105,10 @@ $(function () {
 
   })
 
+  $('.header__menu-link').on('click', function (e) {
+    e.preventDefault()
+    $(this).find('.header__menu-list-2').css({"visibility": "visible",
+      "opacity": 1});
+  })
+
 })
