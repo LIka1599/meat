@@ -1343,12 +1343,12 @@ body {
     display: block;
     padding: 20px;
   }
-  .header__menu {
-    padding-top: 200px;
-  }
   .burger-menu {
     top: 20px;
     right: 30px;
+  }
+  .header__menu-list {
+    overflow-y: scroll;
   }
 }
 @media (max-width: 760px) {
@@ -1470,9 +1470,6 @@ body {
   }
   .footer__top-phones {
     text-align: center;
-  }
-  .header__menu-list {
-    overflow-y: scroll;
   }
 }
 @media (max-width: 480px) {
