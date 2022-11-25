@@ -1,106 +1,49 @@
 $(function () {
-  //плавный скролл
-  $(".footer__top-btn").on("click", function (e) {
-    e.preventDefault();
-    var anchor = $(this).attr('href');
-    $('html, body').stop().animate({
-      scrollTop: $(anchor).offset().top - 60
-    }, 800);
-  });
 
-  $('.popular__slider').slick({
-    arrows: false,
-    infinite: true,
-    slidesToShow: 3,
-    draggable: true,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 780,
-        settings: {
-          slidesToShow: 1
-        }
-      },
-    ]
-  })
-  $('.popular__prev').on('click', function (e) {
-    e.preventDefault()
-    $('.popular__slider').slick('slickPrev')
-  })
-  $('.popular__next').on('click', function (e) {
-    e.preventDefault()
-    $('.popular__slider').slick('slickNext')
-  })
-
-  $('.partners__slider').slick({
-    arrows: false,
-    infinite: true,
-    slidesToShow: 4,
-    draggable: true,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1
-        }
-      },
-    ]
-  })
-  $('.partners__prev').on('click', function (e) {
-    e.preventDefault()
-    $('.partners__slider').slick('slickPrev')
-  })
-  $('.partners__next').on('click', function (e) {
-    e.preventDefault()
-    $('.partners__slider').slick('slickNext')
-  })
-
-  $('.comments__slider').slick({
+  $('.resource__slider').slick({
     arrows: false,
     infinite: true,
     slidesToShow: 1,
-    draggable: true,
+    dots: true,
+    appendDots: $('.resource__dots'),
   })
-  $('.comments__prev').on('click', function (e) {
+
+  $('.resource__prev').on('click', function (e) {
     e.preventDefault()
-    $('.comments__slider').slick('slickPrev')
+    $('.resource__slider').slick('slickPrev')
   })
-  $('.comments__next').on('click', function (e) {
+  $('.resource__next').on('click', function (e) {
     e.preventDefault()
-    $('.comments__slider').slick('slickNext')
+    $('.resource__slider').slick('slickNext')
+  })
+
+  $('.help__question-item').on('click', function (e) {
+    e.preventDefault()
+    if ($(this).hasClass('help__question-item--active')) {
+      $(this).removeClass('help__question-item--active')
+      $(this).children('.help__active').slideUp()
+    } else {
+      $('.help__question-item').removeClass('help__question-item--active')
+      $('.help__active').slideUp()
+      $(this).addClass('help__question-item--active')
+      $(this).children('.help__active').slideDown()
+    }
   })
 
 
-  $('.burger-menu, .owerlay, .close').on('click', function (e) {
+  //media 
+
+  $('.burger, .owerlay').on('click', function (e) {
     e.preventDefault()
-    if ($('.header__menu').hasClass('header__menu--open')) {
-      $('.header__menu').removeClass('header__menu--open');
+    if ($('.header__top').hasClass('header__top--open')) {
+      $('.header__top').removeClass('header__top--open');
       $('.owerlay').removeClass('owerlay--show');
-      $('body').css({"height": "100%","overflow-y": "auto"})
-      //$('.burger-menu').removeClass('burger-menu--open');
+      $('.burger').removeClass('burger--open');
     }
     else {
-      $('.header__menu').addClass('header__menu--open');
+      $('.header__top').addClass('header__top--open');
       $('.owerlay').addClass('owerlay--show');
-      $('body').css({"height": "100vh", "overflow-y": "hidden"})
-      //$('.burger-menu').addClass('burger-menu--open');
+      $('.burger').addClass('burger--open');
     }
 
   })
