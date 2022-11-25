@@ -90,14 +90,14 @@ $(function () {
 
   $('.burger-menu, .owerlay, .close').on('click', function (e) {
     e.preventDefault()
-    if ($('.header__menu').hasClass('header__menu--open')) {
-      $('.header__menu').removeClass('header__menu--open');
+    if ($('.header__menu-inner').hasClass('header__menu-inner--open')) {
+      $('.header__menu-inner').removeClass('header__menu-inner--open');
       $('.owerlay').removeClass('owerlay--show');
       $('body').css({"height": "100%","overflow-y": "auto"})
       //$('.burger-menu').removeClass('burger-menu--open');
     }
     else {
-      $('.header__menu').addClass('header__menu--open');
+      $('.header__menu-inner').addClass('header__menu-inner--open');
       $('.owerlay').addClass('owerlay--show');
       $('body').css({"height": "100vh", "overflow-y": "hidden"})
       //$('.burger-menu').addClass('burger-menu--open');
